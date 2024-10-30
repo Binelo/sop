@@ -1,0 +1,12 @@
+.main {
+    padding: 100px 10px;
+}
+.main-grid {
+    display: grid;
+    justify-items: center;
+    gap: 20px;
+}
+.lista-btns {
+    @include flex(20px);
+    width: 100%;
+}

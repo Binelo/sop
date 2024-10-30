@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulação de Swapping: Swap-in e Swap-out</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    
+    <main class="main container">
+        <a href="index.html" class="back">Voltar</a>
+        <div class="main-grid">
+            <h1>Simulação de Swapping: Swap-in e Swap-out</h1>
+            <p>Clique para adicionar novos processos à fila. Quando há espaço, eles são movidos para a memória principal.</p>
+            
+            <div class="controls">
+                <button onclick='addToQueue()'>Adicionar Processo à Fila</button>
+                <button onclick="processQueueF()">Processar Fila</button>
+            </div>
+            
+            <div class="memory-container">
+                <div>
+                    <h2>Memória Principal</h2>
+                    <div id="main-memory" class="memory"></div>
+                </div>
+                
+                <div>
+                    <h2>Memória Secundária (Swap)</h2>
+                    <div id="secondary-memory" class="memory secondary"></div>
+                </div>
+                
+                <div>
+                    <h2>Fila de Processos</h2>
+                    <div id="process-queue" class="queue"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="/js/swapping.js"></script>
+</body>
+</html>

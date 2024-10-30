@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulação de Fragmentação de Memória</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    
+    <main class="main container">
+        <a href="index.html" class="back">Voltar</a>
+        <div class="main-grid ">
+            <h1>Simulação de Fragmentação de Memória</h1>
+            <p>Clique nos botões abaixo para visualizar os tipos de fragmentação de memória.</p>
+            
+            <div class="lista-btns">
+                <button onclick="showInternalFragmentation()" class="btn">Fragmentação Interna</button>
+                <button onclick="showExternalFragmentation()" class="btn">Fragmentação Externa</button>
+            </div>
+            
+            <div class="memory-container" id="memoryContainer"></div>
+        </div>
+    </main>
+
+    <script src="/js/fragmentacao.js"></script>
+</body>
+</html>

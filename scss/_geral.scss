@@ -1,0 +1,82 @@
+:root {
+  --main: blueviolet;
+  --main2: rgba(204, 169, 240, 0.438);
+  --sec: rgb(84, 235, 79);
+  --light: #f2f2f2;
+  --dark: #1e1e1e;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.whats-fixed {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  animation: move 3s infinite;
+  z-index: 222;
+  max-width: 65px;
+}
+
+@keyframes move {
+  25% {
+    transform: translateX(-10px);
+  }
+
+  50% {
+    transform: translateX(0px);
+  }
+
+  75% {
+    transform: translateX(10px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+html {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  background-color: var(--light);
+}
+
+a,
+svg path,
+button {
+  transition: 0.3s;
+}
+
+.btn {
+  max-width: 280px;
+  width: 100%;
+  height: 50px;
+  @include flex();
+  box-shadow: 0 0 0 3px var(--main) inset, 0 0 0 0 var(--main) inset;
+  font-size: rem(22);
+  transition: .5s ease-out;
+  &:hover {
+    transition: .3s;
+    border-radius: 30px;
+    box-shadow: 140px 0 0 0 var(--main) inset, -140px 0 0 0 var(--main) inset;
+    color: var(--light);
+  }
+}
+.back {
+  position: absolute;
+  left: 0;
+  top: 20px;
+  padding: 5px;
+  &:hover {
+    color: var(--main);
+  }
+}
+
+h1 {
+  @include font(30, 700);
+  text-align: center;
+}
